@@ -1,5 +1,4 @@
 package candidatura;
-
 import java.util.Scanner;
 
 public class Contador {
@@ -21,7 +20,7 @@ public class Contador {
 
     static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
         if (parametroUm >= parametroDois) {
-            throw new ParametrosInvalidosException();
+            throw new ParametrosInvalidosException(parametroUm, parametroDois);
         }
 
         for (int i = parametroUm; i <= parametroDois; i++) {
